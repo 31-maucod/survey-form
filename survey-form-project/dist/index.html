@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form Project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Expats Cuenca Survey Form</h1>
+    
+ <p id="description" class="description text-center">
+   Thank you for taking the time to help us improve our service</p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age:<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="30"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+      <div class="form-group">
+      <p>Please select your citizenship</p>
+      <select id="dropdown" name="citizenship" class="form-control" required>
+        <option disabled selected value>Select your citizenship</option>
+        <option value="states">United States</option>
+        <option value="Canada">Canada</option>
+        <option value="australia">Australia</option>
+        <option value="unitedkingdom">United Kigndom</option>
+        <option value="argentina">Argentina</option>
+        <option value="spain">Spain</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+ <div class="form-group">
+      <p>Are you a current, future or returned expat?</p>
+      <label>
+        <input
+          name="user-state"
+          value="current"
+          type="radio"
+          class="input-radio"
+          checked
+        />Current</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="future"
+          type="radio"
+          class="input-radio"
+        />Future</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="returned"
+          type="radio"
+          class="input-radio"
+        />Returned</label
+      >
+    </div>   
+    
+    <div class="form-group">
+      <p>
+        What info would you like to be highlighted in our magazine?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="tax-assistense"
+          type="checkbox"
+          class="input-checkbox"
+        />Tax assistense</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="visa"
+          type="checkbox"
+          class="input-checkbox"
+        />Visa residence</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="real-state"
+          type="checkbox"
+          class="input-checkbox"
+        />Local real state</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="language"
+          type="checkbox"
+          class="input-checkbox"
+        />Language</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="markets"
+          type="checkbox"
+          class="input-checkbox"
+        />Local markets</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="insurance"
+          type="checkbox"
+          class="input-checkbox"
+        />Health insuranse</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="context"
+          type="checkbox"
+          class="input-checkbox"
+        />Local social context</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="expat-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />Expat Meetups</label
+      >
+      <label
+        ><input
+          name="forum"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Expat forum</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="local-news"
+          type="checkbox"
+          class="input-checkbox"
+        />Local news</label
+      >
+    </div>
+
+<div class="form-group">
+      <p>
+        How did you find out about Cuenca Expats Magazine?
+      </p>
+      <select id="find-out" name="find-out" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="local-radio">Local radio</option>
+        <option value="Tv-advertising">Tv advertising</option>
+        <option value="social-media">Social media</option>
+        <option value="supermarket">Supermarket advertising</option>
+      </select>
+    </div>    
+ <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
